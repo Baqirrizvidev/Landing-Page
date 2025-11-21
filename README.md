@@ -6,13 +6,11 @@ Download all 3 files
 Put them in the same folder
 Open index.html in your browser
 Done! 🎉
-Files
-text
 
-📁 techflow-landing/
-├── index.html    # Main page
-├── styles.css    # Styling
-└── script.js     # Interactions
+ index.html    # Main page
+ styles.css    # Styling
+ script.js     # Interactions
+ 
 Features
 ✨ What's Included:
 
