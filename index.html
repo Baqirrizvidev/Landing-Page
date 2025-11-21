@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlow - Modern Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">TechFlow</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="hero-content">
+            <h1>Welcome to TechFlow</h1>
+            <p>Innovative solutions for modern businesses. Transform your digital presence with cutting-edge technology.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Fast Performance</h3>
+                    <p>Lightning-fast loading speeds and optimized performance for the best user experience.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Reliable</h3>
+                    <p>Bank-level security measures to protect your data and ensure maximum uptime.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Responsive</h3>
+                    <p>Perfectly optimized for all devices, ensuring a seamless experience everywhere.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">💡</div>
+                    <h3>Smart Solutions</h3>
+                    <p>AI-powered features that adapt to your needs and provide intelligent insights.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Custom Design</h3>
+                    <p>Beautifully crafted designs tailored to match your brand identity perfectly.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🔧</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support to help you whenever you need assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section class="about" id="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About TechFlow</h2>
+            <p>We are a team of passionate developers and designers dedicated to creating exceptional digital experiences. With over a decade of experience, we've helped hundreds of businesses transform their online presence.</p>
+            <p>Our mission is to make cutting-edge technology accessible to everyone, regardless of their technical expertise. We believe in innovation, quality, and customer satisfaction above all else.</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <!-- TechFlow Logo SVG -->
+            <div class="logo-container">
+                <svg class="techflow-logo" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.1" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    
+                    <!-- Background decorative circle -->
+                    <circle cx="200" cy="200" r="190" fill="url(#bgGradient)" opacity="0.3"/>
+                    <circle cx="200" cy="200" r="170" fill="none" stroke="url(#logoGradient)" stroke-width="1" opacity="0.5"/>
+                    
+                    <!-- Tech Flow Icon -->
+                    <!-- Circuit nodes -->
+                    <g class="logo-nodes">
+                        <!-- Left node -->
+                        <circle cx="100" cy="200" r="8" fill="url(#logoGradient)" filter="url(#glow)">
+                            <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        
+                        <!-- Top node -->
+                        <circle cx="200" cy="120" r="8" fill="url(#logoGradient)" filter="url(#glow)">
+                            <animate attributeName="r" values="8;10;8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+                        </circle>
+                        
+                        <!-- Right node -->
+                        <circle cx="300" cy="200" r="8" fill="url(#logoGradient)" filter="url(#glow)">
+                            <animate attributeName="r" values="8;10;8" dur="2s" begin="1s" repeatCount="indefinite"/>
+                        </circle>
+                        
+                        <!-- Bottom node -->
+                        <circle cx="200" cy="280" r="8" fill="url(#logoGradient)" filter="url(#glow)">
+                            <animate attributeName="r" values="8;10;8" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+                        </circle>
+                    </g>
+                    
+                    <!-- Connecting lines with flow animation -->
+                    <g class="logo-lines">
+                        <!-- Hexagon shape connecting nodes -->
+                        <path d="M 100 200 L 200 120 L 300 200 L 200 280 Z" 
+                              fill="none" 
+                              stroke="url(#logoGradient)" 
+                              stroke-width="2" 
+                              stroke-dasharray="5,5"
+                              opacity="0.6">
+                            <animate attributeName="stroke-dashoffset" values="0;10" dur="1s" repeatCount="indefinite"/>
+                        </path>
+                        
+                        <!-- Center connections -->
+                        <line x1="100" y1="200" x2="300" y2="200" stroke="url(#logoGradient)" stroke-width="2" opacity="0.4"/>
+                        <line x1="200" y1="120" x2="200" y2="280" stroke="url(#logoGradient)" stroke-width="2" opacity="0.4"/>
+                    </g>
+                    
+                    <!-- Center Tech Symbol -->
+                    <g class="center-symbol">
+                        <!-- Main hexagon -->
+                        <path d="M 200 160 L 240 180 L 240 220 L 200 240 L 160 220 L 160 180 Z" 
+                              fill="url(#logoGradient)" 
+                              opacity="0.9"/>
+                        
+                        <!-- Inner decoration -->
+                        <path d="M 200 170 L 225 183 L 225 217 L 200 230 L 175 217 L 175 183 Z" 
+                              fill="white" 
+                              opacity="0.3"/>
+                        
+                        <!-- Flow arrows -->
+                        <g class="flow-arrows" fill="white">
+                            <path d="M 185 190 L 195 190 L 195 185 L 205 195 L 195 205 L 195 200 L 185 200 Z" opacity="0.8">
+                                <animateTransform attributeName="transform" type="rotate" from="0 200 195" to="360 200 195" dur="4s" repeatCount="indefinite"/>
+                            </path>
+                        </g>
+                    </g>
+                    
+                    <!-- TechFlow Text -->
+                    <g class="logo-text">
+                        <!-- Tech -->
+                        <text x="200" y="340" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="url(#logoGradient)">
+                            Tech
+                        </text>
+                        <!-- Flow -->
+                        <text x="200" y="370" font-family="Arial, sans-serif" font-size="36" font-weight="300" text-anchor="middle" fill="#666">
+                            Flow
+                        </text>
+                    </g>
+                    
+                    <!-- Animated particles -->
+                    <g class="particles">
+                        <circle cx="150" cy="150" r="2" fill="url(#logoGradient)" opacity="0.6">
+                            <animate attributeName="cx" values="150;250;150" dur="3s" repeatCount="indefinite"/>
+                            <animate attributeName="cy" values="150;250;150" dur="3s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="0;0.6;0" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="250" cy="150" r="2" fill="url(#logoGradient)" opacity="0.6">
+                            <animate attributeName="cx" values="250;150;250" dur="3s" repeatCount="indefinite"/>
+                            <animate attributeName="cy" values="150;250;150" dur="3s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="0;0.6;0" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="250" cy="250" r="2" fill="url(#logoGradient)" opacity="0.6">
+                            <animate attributeName="cx" values="250;150;250" dur="3s" repeatCount="indefinite"/>
+                            <animate attributeName="cy" values="250;150;250" dur="3s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="0;0.6;0" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                    </g>
+                </svg>
+                
+                <!-- Alternative simpler version (uncomment to use) -->
+                <!-- 
+                <div class="simple-logo">
+                    <div class="logo-icon">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-slash">/</span>
+                        <span class="logo-bracket">&gt;</span>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-tech">Tech</span>
+                        <span class="logo-flow">Flow</span>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">Talented individuals who make everything possible</p>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Michael Chen">
+                        <div class="member-overlay">
+                            <div class="social-icons">
+                                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Michael Chen</h3>
+                        <p class="member-role">CEO & Founder</p>
+                        <p class="member-bio">Visionary leader with 15+ years of experience in tech innovation and business strategy.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Sarah Johnson">
+                        <div class="member-overlay">
+                            <div class="social-icons">
+                                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://dribbble.com" target="_blank" aria-label="Dribbble">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.628 0-12 5.373-12 12s5.372 12 12 12 12-5.373 12-12-5.372-12-12-12zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073-.244-.563-.497-1.125-.767-1.68 2.31-1 4.165-2.358 5.548-4.082 1.35 1.594 2.197 3.619 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68-1.016-1.861-2.178-3.676-3.488-5.438.779-.197 1.591-.314 2.431-.314 2.275 0 4.368.779 6.043 2.072zm-10.516-.993c1.331 1.742 2.511 3.538 3.537 5.381-2.43.715-5.331 1.082-8.684 1.105.692-2.835 2.601-5.193 5.147-6.486zm-5.44 8.834l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.952.67 1.432-3.38 1.057-6.165 3.222-8.337 6.48-1.432-1.719-2.296-3.927-2.296-6.334zm3.829 7.81c1.969-3.088 4.482-5.098 7.598-6.027.928 2.42 1.609 4.91 2.043 7.46-3.349 1.291-6.953.666-9.641-1.433zm11.586.43c-.438-2.353-1.08-4.653-1.92-6.897 1.876-.265 3.94-.196 6.199.196-.437 2.786-2.028 5.192-4.279 6.701z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="member-role">Lead Designer</p>
+                        <p class="member-bio">Creative mind specializing in UI/UX design with a passion for user-centered solutions.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" alt="David Rodriguez">
+                        <div class="member-overlay">
+                            <div class="social-icons">
+                                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://stackoverflow.com" target="_blank" aria-label="Stack Overflow">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M15 21h-10v-2h10v2zm6-11.665l-1.621-9.335-1.993.346 1.62 9.335 1.994-.346zm-5.964 6.937l-9.746-.975-.186 2.016 9.755.879.177-1.92zm.538-2.587l-9.276-2.608-.526 1.954 9.306 2.5.496-1.846zm1.204-2.413l-8.297-4.864-1.029 1.743 8.298 4.865 1.028-1.744zm1.866-1.467l-5.339-7.829-1.672 1.14 5.339 7.829 1.672-1.14zm-2.644 4.195v8h-12v-8h-2v10h16v-10h-2z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>David Rodriguez</h3>
+                        <p class="member-role">Tech Lead</p>
+                        <p class="member-bio">Full-stack developer with expertise in scalable architectures and cloud solutions.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop" alt="Emily Zhang">
+                        <div class="member-overlay">
+                            <div class="social-icons">
+                                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://medium.com" target="_blank" aria-label="Medium">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M0 0v24h24v-24h-24zm19.938 5.686l-2.87 2.75v14.253l2.87 2.625v.686h-7.436v-.686l2.871-2.75v-11.021l-3.936 11.396h-.678l-4.259-11.396v8.396l2.121 2.625v.686h-4.559v-.686l2.122-2.625v-11.583l-2.122-2.064v-.686h4.496l3.435 8.896 3.186-8.896h4.759v.686z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Emily Zhang</h3>
+                        <p class="member-role">Product Manager</p>
+                        <p class="member-bio">Strategic thinker driving product development and ensuring exceptional user experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message">Please enter your name</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message">Please enter a valid email</span>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <span class="error-message">Please enter a subject</span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error-message">Please enter your message</span>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Twitter">t</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="Instagram">ig</a>
+            </div>
+            <p>&copy; 2024 TechFlow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-top" id="scrollTop">↑</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
